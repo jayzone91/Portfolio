@@ -1,0 +1,40 @@
+  <header>
+    <div class="menu-btn">
+      <span class="menu-btn__burger"></span>
+    </div>
+
+    <nav class="nav">
+      <ul class="menu-nav">
+        <li class="menu-nav__item {{ 'active' if '/home' in page.url }}">
+          <a href="../home" class="menu-nav__link">
+            Home
+          </a>
+        </li>
+        <li class="menu-nav__item {{ 'active' if '/about' in page.url }}">
+          <a href="../about" class="menu-nav__link">
+            Über Mich
+          </a>
+        </li>
+        <li class="menu-nav__item {{ 'active' if '/projects' in page.url }}">
+          <a href="../projects" class="menu-nav__link">
+            Meine Projekte
+          </a>
+        </li>
+        <li class="menu-nav__item {{ 'active' if '/contact' in page.url }}">
+          <a href="../contact" class="menu-nav__link">
+            Kontakt
+          </a>
+        </li>
+        <li class="menu-nav__item {{ 'active' if '/impressum' in page.url }}">
+          <a href="../impressum" class="menu-nav__link">
+            Impressum
+          </a>
+        </li>
+        <li class="menu-nav__item {{ 'active' if '/datenschutz' in page.url }}">
+          <a href="../datenschutz" class="menu-nav__link">
+            Datenschutz
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
